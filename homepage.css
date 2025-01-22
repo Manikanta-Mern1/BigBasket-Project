@@ -1,0 +1,180 @@
+.bottom-section {
+    border-radius: 30px;
+    margin:20px 0px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.box3{
+    gap:80px;
+}
+.para1{
+    font-size: small;
+    text-align: right;
+    color:red;
+    font-weight: 700;
+}
+.boxcard1{
+    background-color:azure;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px 3px grey;
+}
+.cardheader1{
+    font-size: x-large;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    text-shadow: 0px 0px 3px grey;
+}
+.footerbutton1{
+    padding:5px;
+    border-radius: 5px;
+    border:none;
+    color: #2390fc;
+}
+.card-box {
+    background-color: whitesmoke;
+    border-radius: 20px;
+    margin: 20px 0px;
+    padding: 30px 60px;
+    border: 1px solid grey;
+
+}
+
+.card-name {
+    font-size:larger;
+    text-align: center;
+    border-radius: 20px;
+    margin-top: 10px;
+    color:#ab35f0;
+}
+
+.card-image {
+    border-radius: 20px;
+    height: 200px;
+    width:100%;
+    cursor:pointer;
+}
+
+.card-image:hover {
+    height: 210px;
+}
+
+.price-card {
+    margin-top:5px;
+    font-size: large;
+    text-align: right;
+    color:#ed286d;
+
+}
+.card-name:hover{
+    color:violet;
+ }
+ .price-card:hover{
+     color:aqua;
+ }
+.para1:hover{
+    color:#ab35f0;
+} 
+.but1{
+    font-size: large;
+    margin-bottom: 3px;
+    width:100%;
+    padding:8px;
+    border-radius: 5px;
+    color:orange;
+    border-color: #f7ab05;
+}
+.but2{
+    font-size: larger;
+    width:100%;
+    padding: 8px;
+    border-radius:5px;
+    margin-left: 2px;
+    color:green;
+    border-color: #4ef705;
+}
+.footerbutton1:hover{
+    color:white;
+    background-color: #2390fc;
+    transition: 1s;
+}
+
+.but1:hover{
+    background-color: orange;
+    color:white;
+    transition: 1s;
+}
+.but2:hover{
+    background-color: green;
+    color:white;
+    transition: 1s;
+}
+.nav-item{
+    font-weight: bolder;
+}
+.nav-item:hover{
+    background-color: #14fa2f;
+    border-radius: 8px;
+    color:white;
+    transition: 2s;
+}
+.footerbox1{
+    padding:10px;
+    background-color: beige;
+    border:1px solid;
+
+}
+.footerpara1{
+    text-align: center;
+    font-weight: bold;
+    font-size: larger;
+}
+.footerpara2{
+    text-align: center;
+    color:grey;
+    font-size: large;
+    font-weight: bold;
+}
+@media (min-width:0px) and (max-width:1025px){
+.box3{
+    gap:0px;
+}
+.nav-item:hover{
+    background-color: white;
+}
+}
+.topoffers{
+    display:flex;
+}
+.topoffershead{
+    font-size:large;
+    margin:5px 0px;
+    padding:5px 0px;
+    text-shadow: 0px 0px 2px grey;
+}
+.topofferscard{
+    margin:10px;
+    padding:10px 5px 20px 5px;
+    background-color: white;
+    border-radius: 5px;
+
+}
+.topoffersimage{
+    height:200px;
+    max-width:100%;
+}
+.topoffersmain{
+    background:whitesmoke;
+    padding:20px;
+    margin:20px 0px;
+}
+.topofferscard:hover{
+    box-shadow: 0px 0px 10px 5px grey;
+}
+.main1{
+    background:#ded9cc;
+    padding:20px;
+    margin:20px 0px;
+    border-radius: 3px;
+}
+
+  

@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Smart Basket</title>
+    <link rel="icon" href="https://cdn.vectorstock.com/i/1000v/14/51/smart-mart-icon-s-typography-logo-vector-45351451.jpg">
+    <link rel="stylesheet" href="./homepage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <style>
+
+    </style>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-xl sticky-top navbar-light bg-light">
+        <a class="navbar-brand" href="#"><img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxBCGp64U6UNfPodc03WUeq__MTDSw4b2e7w&s"
+                alt="Smart" height="80px" width="180px"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <form class="form-inline my-2 my-lg-6 mr-auto">
+                <input class="form-control mr-sm-6" type="search" placeholder="🔍Search Products" aria-label="Search" required
+                    style="padding-right: 580px;">
+            </form>
+            <div class="navbar-nav ml-auto" style="gap:5px;">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit" onclick="location.href='cart.html'">Cart 🛒</button>
+                <button class="btn btn-outline-info my-2 my-sm-0" type="submit" onclick="location.href='./offers.html'">Offers</button>
+            </div>
+        </div>
+    </nav>
+    <nav class="navbar navbar-expand-xl navbar-light bg-light">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="navbar-nav ml-auto box3">
+                <li class="nav-item box2">
+                    <a class="nav-link" href="./index.html">Home</a>
+                </li>
+                <li class="nav-item box2">
+                    <a class="nav-link" href="./dryfruits.html">Dry Fruits</a>
+                </li>
+                <li class="nav-item box2">
+                    <a class="nav-link" href="./vegetables.html">Vegetables</a>
+                </li>
+                <li class="nav-item box2">
+                    <a class="nav-link" href="./fruits.html">Fruits</a>
+                </li>
+                <li class="nav-item box2">
+                    <a class="nav-link" href="./groceries.html">Groceries</a>
+                </li>
+            </div>
+            <ul class="navbar-nav ml-auto">
+                <!-- <button class="btn btn-outline-warning my-2 my-sm-0" type="submit" data-toggle="modal"
+                    data-target="#LocationModal">Location🌐</button> -->
+                <button class="btn btn-outline-warning my-2 my-sm-0 ml-2" type="submit" data-toggle="modal"
+                    data-target="#LoginModal">Login</button>
+                <button class="btn btn-outline-secondary my-2 my-sm-0 ml-2" type="submit" data-toggle="modal"
+                    data-target="#SignUpModal">Signup</button>
+            </ul>
+        </div>
+    </nav>
+    <div class="container-lg">
+        <div class="bottom-section">
+            <div class="card137 card-box col-md-6 col-xl-3">
+                <!-- <p class="para1">7&percnt; Off</p> -->
+                <img src="https://www.fragranceandfashion.in/cdn/shop/files/Magnetcopy.jpg?v=1713594096&width=1445" alt=""
+                        class="card-image">
+                <h1 class="card-name">Magnet</h1>
+                <h1 class="price-card">Rs:400</h1>
+                <a href="#"><button class="but1" onclick="addToCart('Magnet', 400)">Add to Cart</button></a>
+                <a href="buy.html"><button class="but2">Buy</button></a>
+            </div>
+            <div class="card138 card-box col-md-6 col-xl-3 ">
+                <!-- <p class="para1">2&percnt; Off</p> -->
+                <img src="https://www.jiomart.com/images/product/original/590827177/fogg-fresh-fougere-fragrance-body-spray-for-men-120-ml-0-20211019.jpg?im=Resize=(1000,1000)"
+                    alt="" class="card-image">
+                <h1 class="card-name">Fogg</h1>
+                <h1 class="price-card">Rs:690</h1>
+                <a href="#"><button class="but1" onclick="addToCart('Fogg', 690)">Add to Cart</button></a>
+                <a href="buy.html"><button class="but2">Buy</button></a>
+            </div>
+            <div class="card139 card-box col-md-6 col-xl-3 ">
+                <!-- <p class="para1">2&percnt; Off</p> -->
+                <img src="https://i.ebayimg.com/images/g/ZzEAAOSwPUhmQKOm/s-l400.jpg" alt=""
+                    class="card-image">
+                <h1 class="card-name">Midnight</h1>
+                <h1 class="price-card">Rs:330</h1>
+                <a href="#"><button class="but1" onclick="addToCart('Midnight', 330)">Add to Cart</button></a>
+                <a href="buy.html"><button class="but2">Buy</button></a>
+            </div>
+            <div class="card140 card-box col-md-6 col-xl-3">
+                <!-- <p class="para1">7&percnt; Off</p> -->
+               <img src="https://m.media-amazon.com/images/I/61YzY5E4onL._AC_UF1000,1000_QL80_.jpg" alt=""
+                    class="card-image">
+                <h1 class="card-name">Red z+</h1>
+                <h1 class="price-card">Rs:314</h1>
+                <a href="#"><button class="but1" onclick="addToCart('Red z+', 314)">Add to Cart</button></a>
+                <a href="buy.html"><button class="but2">Buy</button></a>
+            </div>
+            <div class="card141 card-box col-md-6 col-xl-3">
+                <!-- <p class="para1">7&percnt; Off</p> -->
+                <img src="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1637201505-y0996347-c099600764-e01-zhc-1637201482.jpg?crop=0.670xw:1.00xh;0.147xw,0&resize=980:*" alt=""
+                        class="card-image">
+                <h1 class="card-name">Miss Dior</h1>
+                <h1 class="price-card">Rs:275</h1>
+                <a href="#"><button class="but1" onclick="addToCart('Miss Dior', 275)">Add to Cart</button></a>
+                <a href="buy.html"><button class="but2">Buy</button></a>
+            </div>
+            <div class="card142 card-box col-md-6 col-xl-3 ">
+                <!-- <p class="para1">2&percnt; Off</p> -->
+                <img src="https://bellavitaorganic.com/cdn/shop/files/1_d5115b80-e607-4477-9205-b78447cd0e10.jpg?v=1714549127"
+                    alt="" class="card-image">
+                <h1 class="card-name">Bella Vita Senorita</h1>
+                <h1 class="price-card">Rs:570</h1>
+                <a href="#"><button class="but1" onclick="addToCart('Bella Vita Senorita', 570)">Add to Cart</button></a>
+                <a href="buy.html"><button class="but2">Buy</button></a>
+            </div>
+            <div class="card143 card-box col-md-6 col-xl-3 ">
+                <!-- <p class="para1">2&percnt; Off</p> -->
+                <img src="https://img.clevup.in/255755/1665945359963_RAMSONSSCENTOFBLOOMEaudeParfumPerfume100mlForWomen3.jpeg?width=600&format=webp" alt=""
+                    class="card-image">
+                <h1 class="card-name">Ramson Woman Scent</h1>
+                <h1 class="price-card">Rs:600</h1>
+                <a href="#"><button class="but1" onclick="addToCart('Ramson Woman Scent', 600)">Add to Cart</button></a>
+                <a href="buy.html"><button class="but2">Buy</button></a>
+            </div>
+            <div class="card144 card-box col-md-6 col-xl-3">
+                <!-- <p class="para1">7&percnt; Off</p> -->
+                <img src="https://i.pinimg.com/736x/4a/06/17/4a06170651640411e599a90b0378a346.jpg" alt=""
+                    class="card-image">
+                <h1 class="card-name">Ramson Stud</h1>
+                <h1 class="price-card">Rs:555</h1>
+                <a href="#"><button class="but1" onclick="addToCart('Ramson Stud', 555)">Add to Cart</button></a>
+                <a href="buy.html"><button class="but2">Buy</button></a>
+            </div>
+        </div>
+    </div>
+    <footer class="footerbox1">
+        <p class="footerpara1">All Rights are Reserved</p>
+        <p class="footerpara2">Copyrights&copy; 2025</p>
+        <center>
+        <i class="fa-brands fa-square-facebook"></i> 
+        <i class="fa-brands fa-square-instagram"></i>    
+        <i class="fa-brands fa-square-twitter"></i>   
+        <i class="fa-brands fa-pinterest"></i>
+        </center>
+
+    </footer>
+    <!-- modal login -->
+    <div class="modal fade" id="LoginModal" tabindex="-1" aria-labelledby="LoginModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title mx-auto" id="LoginModalLabel">Login</h5>
+                </div>
+                <div class="modal-body mx-auto">
+                    <form>
+                        <br>
+                        <h6>Enter your Email</h6>
+                        <label for="Phone Number"></label>
+                        <input type="email" id="Phone Number" name="Phone Number" placeholder="abc@gmail.com">
+                        <br><br>
+                        <h6>Enter your password</h6>
+                        <label for="Phone Number"></label>
+                        <input type="password" id="Phone Number" name="Phone Number" placeholder="password"
+                            minlength="0" maxlength="10"><br>
+                    </form><br>
+                    <a href="#" data-toggle="modal" data-target="#RecoverModal">Forgot password ?</a><br>
+                    <!-- <a href="#" data-toggle="modal" data-target="#SignUpModal">Sign Up ?</a> -->
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-success" onclick="Login()">Login</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Sign Up modal-->
+    <div class="modal fade" id="SignUpModal" tabindex="-1" aria-labelledby="SignUpModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title mx-auto" id="SignUpModalLabel">Sign-Up</h5>
+                </div>
+                <div class="modal-body mx-auto">
+                    <form>
+                        <br>
+                        <h6>Full Name</h6>
+                        <label for="Phone Number"></label>
+                        <input type="text" id="Phone Number" name="Phone Number" placeholder="Enter Your Full Name">
+                        <br><br>
+                        <h6>Email</h6>
+                        <label for="Phone Number"></label>
+                        <input type="email" id="Phone Number" name="Phone Number" placeholder="abc@gmail.com">
+                        <br><br>
+                        <h6>Password</h6>
+                        <label for="Phone Number"></label>
+                        <input type="password" id="Phone Number" name="Phone Number" placeholder="Create a Password"
+                            minlength="0" maxlength="10">
+                        <br><br>
+                        <h6>Confirm Password</h6>
+                        <label for="Phone Number"></label>
+                        <input type="password" id="Phone Number" name="Phone Number" placeholder="Confirm password"
+                            minlength="0" maxlength="10"><br>
+                    </form><br>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" onclick="SignUp()">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Recover password model-->
+    <div class="modal fade" id="RecoverModal" tabindex="-1" aria-labelledby="RecoverModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title mx-auto" id="RecoverModalLabel">Recover Password</h5>
+                </div>
+                <div class="modal-body mx-auto">
+                    <form>
+                        <br>
+                        <h6>Email:</h6>
+                        <label for="Phone Number"></label>
+                        <input type="email" id="Phone Number" name="Phone Number" placeholder="Enter your Email">
+                        <br><br>
+                        <h6>Moblie Number:</h6>
+                        <label for="Phone Number"></label>
+                        <input type="text" id="Phone Number" name="Phone Number" placeholder="Enter your phone Number"
+                            minlength="0" maxlength="10">
+                        <br><br>
+                        <h6>New Password:</h6>
+                        <label for="Phone Number"></label>
+                        <input type="password" id="Phone Number" name="Phone Number" placeholder="Create a Password"
+                            minlength="0" maxlength="10">
+                        <br><br>
+                        <h6>Confirm Password:</h6>
+                        <label for="Phone Number"></label>
+                        <input type="password" id="Phone Number" name="Phone Number" placeholder="Confirm password"
+                            minlength="0" maxlength="10"><br><br>
+                    </form><br>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="reset" class="btn btn-primary" onclick="Reset()">Reset</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal location -->
+    <!-- <div class="modal fade" id="LocationModal" tabindex="-1" aria-labelledby="LocationModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title mx-auto" id="LocationModalLabel">Location</h5>
+                </div>
+                <div class="modal-body mx-auto">
+                    <p class="pre1">
+                        Choose your address location to see product availability <br>and delivery options
+                    </p><br><br>
+                    <form>
+                        <label for="Phone Number"></label>
+                        <input type="text" id="Phone Number" name="Phone Number" placeholder="Enter your Location">
+                    </form><br><br>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Continue</button>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <script src="script.js"></script>
+    <script>
+        function contact1() {
+            alert("To reach our customer service team please email us at: customerservice@bigbasket.com To submit a customer service request click here. [All calls to our customer support number 1860-123-1000 will be recorded for internal training and quality purposes.]")
+        }
+        function Login() {
+            alert("This page is successfully Login...")
+        }
+        function SignUp() {
+            alert("This page is Successfully Sign in...")
+        }
+        function Reset() {
+            alert("This page is successfully reset the password...")
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Smart Basket</title>
+    <link rel="icon" href="https://cdn.vectorstock.com/i/1000v/14/51/smart-mart-icon-s-typography-logo-vector-45351451.jpg">
+    <link rel="stylesheet" href="./homepage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <style>
+
+    </style>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-xl sticky-top navbar-light bg-light">
+        <a class="navbar-brand" href="#"><img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxBCGp64U6UNfPodc03WUeq__MTDSw4b2e7w&s"
+                alt="Smart" height="80px" width="180px"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <form class="form-inline my-2 my-lg-6 mr-auto">
+                <input class="form-control mr-sm-6" type="search" placeholder="🔍Search Vegetables" aria-label="Search" required
+                    style="padding-right: 580px;">
+            </form>
+            <div class="navbar-nav ml-auto" style="gap:5px;">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit" onclick="location.href='cart.html'">Cart 🛒</button>
+                <button class="btn btn-outline-info my-2 my-sm-0" type="submit" onclick="location.href='./offers.html'">Offers</button>
+            </div>
+        </div>
+    </nav>
+    <nav class="navbar navbar-expand-xl navbar-light bg-light">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="navbar-nav ml-auto box3">
+                <li class="nav-item box2">
+                    <a class="nav-link" href="./index.html">Home</a>
+                </li>
+                <li class="nav-item box2">
+                    <a class="nav-link" href="./dryfruits.html">Dry Fruits</a>
+                </li>
+                <li class="nav-item active box2">
+                    <a class="nav-link" href="./vegetables.html">Vegetables</a>
+                </li>
+                <li class="nav-item box2">
+                    <a class="nav-link" href="./fruits.html">Fruits</a>
+                </li>
+                <li class="nav-item box2">
+                    <a class="nav-link" href="./groceries.html">Groceries</a>
+                </li>
+            </div>
+            <ul class="navbar-nav ml-auto">
+                <!-- <button class="btn btn-outline-warning my-2 my-sm-0" type="submit" data-toggle="modal"
+                    data-target="#LocationModal">Location🌐</button> -->
+                <button class="btn btn-outline-warning my-2 my-sm-0 ml-2" type="submit" data-toggle="modal"
+                    data-target="#LoginModal">Login</button>
+                <button class="btn btn-outline-secondary my-2 my-sm-0 ml-2" type="submit" data-toggle="modal"
+                    data-target="#SignUpModal">Signup</button>
+            </ul>
+        </div>
+    </nav>
+    <div class="container-lg">
+        <div class="bottom-section">
+            <div class="card49 card-box col-md-6 col-xl-3">
+                <!-- <p class="para1">7&percnt; Off</p> -->
+                <img src="https://5.imimg.com/data5/IQ/WW/RJ/SELLER-6422178/fresh-organic-bottle-gourd-500x500.jpg" alt="" class="card-image">
+                <h1 class="card-name">Bottle Gourd</h1>
+                <h1 class="price-card">Rs:39</h1>
+                <a href="#"><button class="but1" onclick="addToCart('Bottle gourd', 39)">Add to Cart</button></a>
+                <a href="buy.html"><button class="but2">Buy</button></a>
+            </div>
+            <div class="card50 card-box col-md-6 col-xl-3">
+                <!-- <p class="para1">4&percnt; Off</p> -->
+                <img src="https://www.jiomart.com/images/product/original/590003515/onion-1-kg-product-images-o590003515-p590003515-0-202408070949.jpg?im=Resize=(1000,1000)" alt=""
+                        class="card-image">
+                <h1 class="card-name">Onions</h1>
+                <h1 class="price-card">Rs:60</h1>
+                <a href="#"><button class="but1" onclick="addToCart('Onions', 60)">Add to Cart</button></a>
+                <a href="buy.html"><button class="but2">Buy</button></a>
+            </div>
+            <div class="card51 card-box col-md-6 col-xl-3">
+                <!-- <p class="para1">2&percnt; Off</p> -->
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQs9BEVf0OHtfImHMEU3RXYcmo-zSn9zHVuug&s" alt=""
+                        class="card-image">
+                <h1 class="card-name">Peas</h1>
+                <h1 class="price-card">Rs:70</h1>
+                <a href="#"><button class="but1" onclick="addToCart('Peas', 70)">Add to Cart</button></a>
+                <a href="buy.html"><button class="but2">Buy</button></a>
+            </div>
+            <div class="card52 card-box col-md-6 col-xl-3">
+                <!-- <p class="para1">6&percnt; Off</p> -->
+                <img src="https://www.finedininglovers.com/sites/default/files/article_content_images/Type%20of%20cucumber.jpg" alt="" class="card-image">
+                <h1 class="card-name">cucumber</h1>
+                <h1 class="price-card">Rs:60</h1>
+                <a href="#"><button class="but1" onclick="addToCart('cucumber', 60)">Add to Cart</button></a>
+                <a href="buy.html"><button class="but2">Buy</button></a>
+            </div>
+            <div class="card53 card-box col-md-6 col-xl-3">
+                <!-- <p class="para1">7&percnt; Off</p> -->
+                <img src="https://www.maangchi.com/wp-content/uploads/2007/09/spinach-1.jpg" alt="" class="card-image">
+                <h1 class="card-name">spinach</h1>
+                <h1 class="price-card">Rs:15</h1>
+                <a href="#"><button class="but1" onclick="addToCart('spinach', 15)">Add to Cart</button></a>
+                <a href="buy.html"><button class="but2">Buy</button></a>
+            </div>
+            <div class="card54 card-box col-md-6 col-xl-3">
+                <!-- <p class="para1">7&percnt; Off</p> -->
+                <img src="https://kyssafarms.com/cdn/shop/products/lady-finger.jpg?v=1600955405" alt="" class="card-image">
+                <h1 class="card-name">ladyfinger</h1>
+                <h1 class="price-card">Rs:49</h1>
+                <a href="#"><button class="but1" onclick="addToCart('ladyfinger', 49)">Add to Cart</button></a>
+                <a href="buy.html"><button class="but2">Buy</button></a>
+            </div>
+            <div class="card55 card-box col-md-6 col-xl-3 ">
+                <!-- <p class="para1">2&percnt; Off</p> -->
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0iwy90ZQh_VrwcJCz-OoCOCejqACp25WIWg&s" alt=""
+                        class="card-image">
+                <h1 class="card-name">Beetroot</h1>
+                <h1 class="price-card">Rs:40</h1>
+                <a href="#"><button class="but1" onclick="addToCart('Beetroot', 40)">Add to Cart</button></a>
+                <a href="buy.html"><button class="but2">Buy</button></a>
+            </div>
+            <div class="card56 card-box col-md-6 col-xl-3 ">
+                <!-- <p class="para1">2&percnt; Off</p> -->
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ19DN2VfG3UClSrs8iJD67elvWn1-qAWmpqw&s" alt=""
+                        class="card-image">
+                <h1 class="card-name">Carrot</h1>
+                <h1 class="price-card">Rs:64</h1>
+                <a href="#"><button class="but1" onclick="addToCart('carrot', 64)">Add to Cart</button></a>
+                <a href="buy.html"><button class="but2">Buy</button></a>
+            </div>
+            <div class="card57 card-box col-md-6 col-xl-3 ">
+                <!-- <p class="para1">2&percnt; Off</p> -->
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_LuaIwuIeMerEmWqBpb1sH4C35TvQN_J7Dg&s" alt=""
+                        class="card-image">
+                <h1 class="card-name">Califlower</h1>
+                <h1 class="price-card">Rs:50</h1>
+                <a href="#"><button class="but1" onclick="addToCart('califlower', 50)">Add to Cart</button></a>
+                <a href="buy.html"><button class="but2">Buy</button></a>
+            </div>
+            <div class="card58 card-box col-md-6 col-xl-3 ">
+                <!-- <p class="para1">2&percnt; Off</p> -->
+                <img src="https://images.indianexpress.com/2023/09/Capsicum.jpg" alt=""
+                        class="card-image">
+                <h1 class="card-name">Capsicum</h1>
+                <h1 class="price-card">Rs:60</h1>
+                <a href="#"><button class="but1" onclick="addToCart('capsicum', 60)">Add to Cart</button></a>
+                <a href="buy.html"><button class="but2">Buy</button></a>
+            </div>
+            <div class="card59 card-box col-md-6 col-xl-3 ">
+                <!-- <p class="para1">2&percnt; Off</p> -->
+                <img src="https://assets.clevelandclinic.org/transform/871f96ae-a852-4801-8675-683191ce372d/Benefits-Of-Cabbage-589153824-770x533-1_jpg" alt=""
+                        class="card-image">
+                <h1 class="card-name">Cabbage</h1>
+                <h1 class="price-card">Rs:40</h1>
+                <a href="#"><button class="but1" onclick="addToCart('Cabbage', 40)">Add to Cart</button></a>
+                <a href="buy.html"><button class="but2">Buy</button></a>
+            </div>
+            <div class="card60 card-box col-md-6 col-xl-3 ">
+                <!-- <p class="para1">2&percnt; Off</p> -->
+               <img src="https://asiasociety.org/sites/default/files/styles/1200w/public/F/food_bittergourd_curry.jpg" alt=""
+                        class="card-image">
+                <h1 class="card-name">Bitter gourd</h1>
+                <h1 class="price-card">Rs:40</h1>
+                <a href="#"><button class="but1" onclick="addToCart('Bitter gourd', 40)">Add to Cart</button></a>
+                <a href="buy.html"><button class="but2">Buy</button></a>
+            </div>
+            <div class="card61 card-box col-md-6 col-xl-3 ">
+                <!-- <p class="para1">2&percnt; Off</p> -->
+                <img src="https://www.diggers.com.au/cdn/shop/products/pumpkin-jack-b-little-s1831_6f70a224-b90d-4705-b960-ebaea3264066_2048x.jpg?v=1637121359" alt=""
+                        class="card-image">
+                <h1 class="card-name">Pumpkin</h1>
+                <h1 class="price-card">Rs:70</h1>
+                <a href="#"><button class="but1" onclick="addToCart('Pumpkin', 70)">Add to Cart</button></a>
+                <a href="buy.html"><button class="but2">Buy</button></a>
+            </div>
+            <div class="card62 card-box col-md-6 col-xl-3 ">
+                <!-- <p class="para1">2&percnt; Off</p> -->
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWodsdZmCsLG7aCE5nIwxA9THdR7xw9Yi87g&s" alt=""
+                        class="card-image">
+                <h1 class="card-name">Brinjal</h1>
+                <h1 class="price-card">Rs:80</h1>
+                <a href="#"><button class="but1" onclick="addToCart('Brinjal', 80)">Add to Cart</button></a>
+                <a href="buy.html"><button class="but2">Buy</button></a>
+            </div>
+            <div class="card63 card-box col-md-6 col-xl-3 ">
+                <!-- <p class="para1">2&percnt; Off</p> -->
+                <img src="https://images-prod.healthline.com/hlcmsresource/images/AN_images/tomatoes-1296x728-feature.jpg" alt=""
+                        class="card-image">
+                <h1 class="card-name">Tomato</h1>
+                <h1 class="price-card">Rs:60</h1>
+                <a href="#"><button class="but1" onclick="addToCart('Tomato', 60)">Add to Cart</button></a>
+                <a href="buy.html"><button class="but2">Buy</button></a>
+            </div>
+            <div class="card64 card-box col-md-6 col-xl-3 ">
+                <!-- <p class="para1">2&percnt; Off</p> -->
+                <img src="https://static.toiimg.com/thumb/imgsize-691139,msid-67882583,width-375,height-210,resizemode-75/67882583.jpg" alt=""
+                        class="card-image">
+                <h1 class="card-name">Corn</h1>
+                <h1 class="price-card">Rs:50</h1>
+                <a href="#"><button class="but1" onclick="addToCart('Corn', 50)">Add to Cart</button></a>
+                <a href="buy.html"><button class="but2">Buy</button></a>
+            </div>  
+        </div>
+    </div>
+    <footer class="footerbox1">
+        <p class="footerpara1">All Rights are Reserved</p>
+        <p class="footerpara2">Copyrights&copy; 2025</p>
+        <center>
+        <i class="fa-brands fa-square-facebook"></i> 
+        <i class="fa-brands fa-square-instagram"></i>    
+        <i class="fa-brands fa-square-twitter"></i>   
+        <i class="fa-brands fa-pinterest"></i>
+        </center>
+
+    </footer>
+    <!-- modal login -->
+    <div class="modal fade" id="LoginModal" tabindex="-1" aria-labelledby="LoginModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title mx-auto" id="LoginModalLabel">Login</h5>
+                </div>
+                <div class="modal-body mx-auto">
+                    <form>
+                        <br>
+                        <h6>Enter your Email</h6>
+                        <label for="Phone Number"></label>
+                        <input type="email" id="Phone Number" name="Phone Number" placeholder="abc@gmail.com">
+                        <br><br>
+                        <h6>Enter your password</h6>
+                        <label for="Phone Number"></label>
+                        <input type="password" id="Phone Number" name="Phone Number" placeholder="password"
+                            minlength="0" maxlength="10"><br>
+                    </form><br>
+                    <a href="#" data-toggle="modal" data-target="#RecoverModal">Forgot password ?</a><br>
+                    <!-- <a href="#" data-toggle="modal" data-target="#SignUpModal">Sign Up ?</a> -->
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-success" onclick="Login()">Login</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Sign Up modal-->
+    <div class="modal fade" id="SignUpModal" tabindex="-1" aria-labelledby="SignUpModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title mx-auto" id="SignUpModalLabel">Sign-Up</h5>
+                </div>
+                <div class="modal-body mx-auto">
+                    <form>
+                        <br>
+                        <h6>Full Name</h6>
+                        <label for="Phone Number"></label>
+                        <input type="text" id="Phone Number" name="Phone Number" placeholder="Enter Your Full Name">
+                        <br><br>
+                        <h6>Email</h6>
+                        <label for="Phone Number"></label>
+                        <input type="email" id="Phone Number" name="Phone Number" placeholder="abc@gmail.com">
+                        <br><br>
+                        <h6>Password</h6>
+                        <label for="Phone Number"></label>
+                        <input type="password" id="Phone Number" name="Phone Number" placeholder="Create a Password"
+                            minlength="0" maxlength="10">
+                        <br><br>
+                        <h6>Confirm Password</h6>
+                        <label for="Phone Number"></label>
+                        <input type="password" id="Phone Number" name="Phone Number" placeholder="Confirm password"
+                            minlength="0" maxlength="10"><br>
+                    </form><br>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" onclick="SignUp()">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Recover password model-->
+    <div class="modal fade" id="RecoverModal" tabindex="-1" aria-labelledby="RecoverModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title mx-auto" id="RecoverModalLabel">Recover Password</h5>
+                </div>
+                <div class="modal-body mx-auto">
+                    <form>
+                        <br>
+                        <h6>Email:</h6>
+                        <label for="Phone Number"></label>
+                        <input type="email" id="Phone Number" name="Phone Number" placeholder="Enter your Email">
+                        <br><br>
+                        <h6>Moblie Number:</h6>
+                        <label for="Phone Number"></label>
+                        <input type="text" id="Phone Number" name="Phone Number" placeholder="Enter your phone Number"
+                            minlength="0" maxlength="10">
+                        <br><br>
+                        <h6>New Password:</h6>
+                        <label for="Phone Number"></label>
+                        <input type="password" id="Phone Number" name="Phone Number" placeholder="Create a Password"
+                            minlength="0" maxlength="10">
+                        <br><br>
+                        <h6>Confirm Password:</h6>
+                        <label for="Phone Number"></label>
+                        <input type="password" id="Phone Number" name="Phone Number" placeholder="Confirm password"
+                            minlength="0" maxlength="10"><br><br>
+                    </form><br>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="reset" class="btn btn-primary" onclick="Reset()">Reset</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal location -->
+    <!-- <div class="modal fade" id="LocationModal" tabindex="-1" aria-labelledby="LocationModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title mx-auto" id="LocationModalLabel">Location</h5>
+                </div>
+                <div class="modal-body mx-auto">
+                    <p class="pre1">
+                        Choose your address location to see product availability <br>and delivery options
+                    </p><br><br>
+                    <form>
+                        <label for="Phone Number"></label>
+                        <input type="text" id="Phone Number" name="Phone Number" placeholder="Enter your Location">
+                    </form><br><br>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Continue</button>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <script src="script.js"></script>
+    <script>
+        function contact1() {
+            alert("To reach our customer service team please email us at: customerservice@bigbasket.com To submit a customer service request click here. [All calls to our customer support number 1860-123-1000 will be recorded for internal training and quality purposes.]")
+        }
+        function Login() {
+            alert("This page is successfully Login...")
+        }
+        function SignUp() {
+            alert("This page is Successfully Sign in...")
+        }
+        function Reset() {
+            alert("This page is successfully reset the password...")
+        }
+    </script>
+</body>
+
+</html>

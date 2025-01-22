@@ -1,203 +1,545 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Big Basket</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxPTnhZjiUiJDBSRqBr-OaZI_ibwc5f-xfww&s">
-</head>
-<body>
-    <div class="box">
-    <nav>
-        <div class="logo"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/1/1d/BigBasket_Logo.svg/1200px-BigBasket_Logo.svg.png" alt="big" height="50px" width="100px"></div>
-        <input list="search" size="100" placeholder="🔍Search for products">
-        <datalist id="search">
-            <option value="Kaju">Kaju</option>
-            <option value="Pista">Pista</option>
-            <option value="Badam">Badam</option>
-            <option value="Anjeer">Anjeer</option>
-            <option value="Carrot">Carrot</option>
-            <option value="Tomato">Tomato</option>
-            <option value="Cabbage">Cabbage</option>
-            <option value="Pumpkin">Pumpkin</option>
-            <option value="Straw Berry">Straw Berry</option>
-            <option value="Water Melon">Water Melon</option>
-            <option value="Mango">Mango</option>
-            <option value="Pine Apple">Pine Apple</option>
-            <option value="Toor Dal">Toor Dal</option>
-            <option value="Freedom Oil">Freedom Oil</option>
-            <option value="Vim Liquid">Vim Liquid</option>
-            <option value="Upma">Upma</option>
-        </datalist>
-        <div class="auth">
-        <div class="location">Select location</div>
-        <button><a href="login.html">login/sign up</a></button>
-        </div>
-    </nav>
-    <nav class="second-nav">
-            <select>
-                <option>shop by category</option>
-                <option value="Fruits">Fruits</option>
-                <option value="Dry Fruits">Dry Fruits</option>
-                <option value="Vegetables">Vegetables</option>
-                <option value="Grocerys">Grocerys</option>
-                <option value="Snacks">Snacks</option>
-                <option value="Cakes & Dairy">Cakes & Dairy</option>
-            </select>
-        <a href="#Fruits">Fruits</a>
-        <a href="#Dry Fruits">Dry Fruits</a>
-        <a href="#ghee">ghee</a>
-        <a href="#Grocerys">Grocerys</a>
-        <a href="#Fresh Vegetables">Fresh Vegetables</a>
-        <div class="side">
-            <button class="smart">Smart Basket</button>
-            <button class="smart">Offers</button>
-        </div>
-    </nav>
-    </div>
-    <div class="slides">
-        <div class="slide slide-1">
-            <img src="https://www.bigbasket.com/media/uploads/banner_images/hp_m_babycare_250923_400.jpg?tr=w-1130,q-80 " alt="Fruits">
-        </div>
 
-        <div class="slide slide-2">
-            <img src="https://www.bigbasket.com/media/uploads/banner_images/hp_m_petstore_250923_400.jpg?tr=w-1130,q-80 " alt="Vegetables" />
+<head>
+    <title>Smart Basket</title>
+    <link rel="icon"
+        href="https://cdn.vectorstock.com/i/1000v/14/51/smart-mart-icon-s-typography-logo-vector-45351451.jpg">
+    <link rel="stylesheet" href="homepage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+</head>
+
+<body style="background-color: whitesmoke;">
+    <nav class="navbar navbar-expand-xl sticky-top navbar-light bg-light">
+        <a class="navbar-brand" href="#"><img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxBCGp64U6UNfPodc03WUeq__MTDSw4b2e7w&s"
+                alt="Smart" height="80px" width="180px"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <form class="form-inline my-2 my-lg-6 mr-auto">
+                <input class="form-control mr-sm-6" type="search" placeholder="🔍Search Products" aria-label="Search" required
+                    style="padding-right: 580px;">
+            </form>
+            <div class="navbar-nav ml-auto" style="gap:5px;">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit" onclick="location.href='cart.html'">Cart
+                    🛒</button>
+                <button class="btn btn-outline-info my-2 my-sm-0" type="submit"
+                    onclick="location.href='./offers.html'">Offers</button>
+            </div>
         </div>
-        <div class="slide slide-3">
-            <img src="https://www.bigbasket.com/media/uploads/banner_images/hp_m_health_suppliment_250923_400.jpg?tr=w-1130,q-80 " alt="Grocerys" />
+    </nav>
+    <nav class="navbar navbar-expand-xl navbar-light bg-light">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="navbar-nav ml-auto box3">
+                <!-- <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                        style="background-color: #15a11a; color:snow; border-radius: 10px;">
+                        Shop By Category
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown"
+                        style="background-color: beige; border-radius: 5px;">
+                        <a class="dropdown-item" href="./Live offers.html">Live Offers</a>
+                        <a class="dropdown-item" href="./dryfruits.html">DryFruits</a>
+                        <a class="dropdown-item" href="./vegetables.html">Vegetables</a>
+                        <a class="dropdown-item" href="./fruits.html">Fruits</a>
+                        <a class="dropdown-item" href="./groceries.html">Groceries</a>
+                    </div>
+                </li> -->
+                <li class="nav-item active box2">
+                    <a class="nav-link" href="./index.html">Home</a>
+                </li>
+                <li class="nav-item box2">
+                    <a class="nav-link" href="./dryfruits.html">Dry Fruits</a>
+                </li>
+                <li class="nav-item box2">
+                    <a class="nav-link" href="./vegetables.html">Vegetables</a>
+                </li>
+                <li class="nav-item box2">
+                    <a class="nav-link" href="./fruits.html">Fruits</a>
+                </li>
+                <li class="nav-item box2">
+                    <a class="nav-link" href="./groceries.html">Groceries</a>
+                </li>
+            </div>
+            <ul class="navbar-nav ml-auto">
+                <!-- <button class="btn btn-outline-warning my-2 my-sm-0" type="submit" data-toggle="modal"
+                    data-target="#LocationModal">Location🌐</button> -->
+                <button class="btn btn-outline-warning my-2 my-sm-0 ml-2" type="submit" data-toggle="modal"
+                    data-target="#LoginModal">Login</button>
+                <button class="btn btn-outline-secondary my-2 my-sm-0 ml-2" type="submit" data-toggle="modal"
+                    data-target="#SignUpModal">Signup</button>
+            </ul>
         </div>
-        <div class="slide slide-4">
-            <img src="https://www.bigbasket.com/media/uploads/banner_images/hp_bcd_m_bcd_250923_400.jpg?tr=w-1130,q-80 " alt="Dry Fruits" />
+    </nav>
+    <div id="carouselExampleControls" class="carousel slide " data-ride="carousel">
+        <div class="carousel-inner" style="z-index: -9999;">
+            <div class="carousel-item  box1">
+                <img src="https://i0.wp.com/blog.buyjustfresh.com/wp-content/uploads/2024/04/cover-image.png?fit=940%2C532&ssl=1"
+                    class="d-block w-100" alt="..." height="500px">
+            </div>
+            <div class="carousel-item box1">
+                <img src="https://www.shutterstock.com/image-vector/happy-woman-doing-grocery-shopping-260nw-2289505739.jpg"
+                    class="d-block w-100" alt="..." height="500px">
+            </div>
+            <div class="carousel-item active box1 ">
+                <img src="https://www.getwidget.dev/blog/wp-content/uploads/2024/10/Top-10-Online-Grocery-Shopping-Apps-in-Bangalore.png"
+                    class="d-block w-100" alt="..." height="500px">
+            </div>
+            <div class="carousel-item box1 ">
+                <img src="https://greenleafco.in/wp-content/uploads/2022/12/MM_GREEN-LEAF_Blog-02.jpg"
+                    class="d-block w-100" alt="..." height="500px">
+            </div>
+            <div class="carousel-item box1">
+                <img src="https://img.freepik.com/premium-psd/product-display-mockup-show-product-presentation-background-healthy-fresh-vegetable_892970-6445.jpg"
+                    class="d-block w-100" alt="..." height="500px">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div><br>
+    <div class="container-lg">
+        <div class="d-flex main1">
+            <div class="topofferscard">
+                <a href="./vegetables.html"><img src="./image-1.jpg"
+                    class="topoffersimage"></a>
+            </div>
+            <div class="topofferscard">
+                <a href="./fruits.html"><img src="./image-2.jpg"
+                    class="topoffersimage"></a>
+            </div>
+            <div class="topofferscard">
+                <a href="./herb1.html"><img src="./image-3.jpg"
+                    class="topoffersimage"></a>
+            </div>
+            <div class="topofferscard">
+                <a href="./cuts1.html"><img src="./image-4.jpg"
+                    class="topoffersimage"></a>
+            </div>
+        </div>
+    </div><br>
+    <div class="container-lg boxcard1">
+        <div class="flex-row"><br><br>
+            <h1 class="cardheader1">GROCERIES</h1>
+            <div class="bottom-section">
+                <div class="card1 card-box col-md-6 col-xl-3">
+                    <!-- <p class="para1">7&percnt; Off</p> -->
+                    <a href="./basmati rice.html"><img
+                            src="https://images-cdn.ubuy.co.in/66cad75d00468c45346cd3c5-bombay-market-white-basmati-rice.jpg"
+                            alt="" class="card-image"></a>
+                    <h1 class="card-name">Basmati Rice</h1>
+                    <h1 class="price-card">Rs:153</h1>
+                    <a href="#"><button class="but1" onclick="addToCart('Basmati Rice', 153)">Add to
+                            Cart</button></a>
+                    <a href="buy.html"><button class="but2">Buy</button></a>
+                </div>
+                <div class="card2 card-box col-md-6 col-xl-3 ">
+                    <!-- <p class="para1">2&percnt; Off</p> -->
+                    <a href="./butter.html"><img
+                            src="https://media.npr.org/assets/img/2017/02/23/butter1_wide-c43435e5f01953c2115bbb299be8eee283e914b5.jpg?s=1400&c=100&f=jpeg"
+                            alt="" class="card-image"></a>
+                    <h1 class="card-name">Butter</h1>
+                    <h1 class="price-card">Rs:60</h1>
+                    <a href="#"><button class="but1" onclick="addToCart('Butter', 60)">Add to Cart</button></a>
+                    <a href="buy.html"><button class="but2">Buy</button></a>
+                </div>
+                <div class="card3 card-box col-md-6 col-xl-3 ">
+                    <!-- <p class="para1">2&percnt; Off</p> -->
+                    <a href="./sugar.html"><img
+                            src="https://www.thesun.co.uk/wp-content/uploads/2017/04/nintchdbpict000313796828.jpg?strip=all&w=620&h=413&crop=1"
+                            alt="" class="card-image"></a>
+                    <h1 class="card-name">Sugar</h1>
+                    <h1 class="price-card">Rs:50</h1>
+                    <a href="#"><button class="but1" onclick="addToCart('sugar', 50)">Add to Cart</button></a>
+                    <a href="buy.html"><button class="but2">Buy</button></a>
+                </div>
+                <div class="card4 card-box col-md-6 col-xl-3">
+                    <!-- <p class="para1">7&percnt; Off</p> -->
+                    <a href="./dal.html"><img src="https://m.media-amazon.com/images/I/81Zeujhzd0L.jpg" alt=""
+                            class="card-image"></a>
+                    <h1 class="card-name">Toor Dal</h1>
+                    <h1 class="price-card">Rs:165</h1>
+                    <a href="#"><button class="but1" onclick="addToCart('Toor Dal', 165)">Add to Cart</button></a>
+                    <a href="buy.html"><button class="but2">Buy</button></a>
+                </div>
+            </div>
+            <footer>
+                <button class="footerbutton1" onclick="location.href='groceries.html'">view more</button>
+            </footer>
+            <br><br>
+        </div>
+    </div><br><br>
+    <div class="container-lg boxcard1">
+        <div class="flex-row"><br><br>
+            <h1 class="cardheader1">DRYFRUITS</h1>
+            <div class="bottom-section">
+                <div class="card5 card-box col-md-6 col-xl-3">
+                    <!-- <p class="para1">7&percnt; Off</p> -->
+                    <a href="./cashew nuts.html"><img
+                            src="https://achalorg.com/resource/uploads/product/xwholes-xxxl-front_1634618303.jpg.pagespeed.ic.Cu_fjHPkOd.jpg"
+                            alt="" class="card-image"></a>
+                    <h1 class="card-name">Cashew Nuts</h1>
+                    <h1 class="price-card">Rs:520</h1>
+                    <a href="#"><button class="but1" onclick="addToCart('Cashew Nuts', 520)">Add to Cart</button></a>
+                    <a href="buy.html"><button class="but2">Buy</button></a>
+                </div>
+                <div class="card6 card-box col-md-6 col-xl-3 ">
+                    <!-- <p class="para1">2&percnt; Off</p> -->
+                    <a href="./dates.html"><img
+                            src="https://5.imimg.com/data5/SELLER/Default/2023/3/HS/UJ/ZO/105809018/photo-2022-07-29-12-44-29.jpg"
+                            alt="" class="card-image"></a>
+                    <h1 class="card-name">Dates</h1>
+                    <h1 class="price-card">Rs:140</h1>
+                    <a href="#"><button class="but1" onclick="addToCart('Dates', 140)">Add to Cart</button></a>
+                    <a href="buy.html"><button class="but2">Buy</button></a>
+                </div>
+                <div class="card7 card-box col-md-6 col-xl-3 ">
+                    <!-- <p class="para1">2&percnt; Off</p> -->
+                    <a href="./cranberries.html"><img
+                            src="https://images.pexels.com/photos/306800/pexels-photo-306800.jpeg" alt=""
+                            class="card-image"></a>
+                    <h1 class="card-name">Cranberries</h1>
+                    <h1 class="price-card">Rs:333</h1>
+                    <a href="#"><button class="but1" onclick="addToCart('cranberries', 333)">Add to Cart</button></a>
+                    <a href="buy.html"><button class="but2">Buy</button></a>
+                </div>
+                <div class="card8 card-box col-md-6 col-xl-3">
+                    <!-- <p class="para1">7&percnt; Off</p> -->
+                    <a href="./walnuts.html"><img
+                            src="https://aarogyamastu.in/wp-content/uploads/2022/06/walnut-kernel-1000x1000-1.webp"
+                            alt="" class="card-image"></a>
+                    <h1 class="card-name">Walnuts</h1>
+                    <h1 class="price-card">Rs:301</h1>
+                    <a href="#"><button class="but1" onclick="addToCart('walnuts', 301)">Add to Cart</button></a>
+                    <a href="buy.html"><button class="but2">Buy</button></a>
+                </div>
+            </div>
+            <footer>
+                <button class="footerbutton1" onclick="location.href='./dryfruits.html'">view more</button>
+            </footer>
+            <br><br>
+        </div>
+    </div><br><br>
+    <div class="container-lg boxcard1">
+        <div class="flex-row"><br><br>
+            <h1 class="cardheader1">FRESH FRUITS</h1>
+            <div class="bottom-section">
+                <div class="card9 card-box col-md-6 col-xl-3">
+                    <!-- <p class="para1">7&percnt; Off</p> -->
+                    <a href="./custardapple.html"><img
+                            src="https://cdn.shopaccino.com/rootz/products/picture3-77089123617744_m.jpg?v=523" alt=""
+                            class="card-image"></a>
+                    <h1 class="card-name">CustardApple</h1>
+                    <h1 class="price-card">Rs:104</h1>
+                    <a href="#"><button class="but1" onclick="addToCart('CustardApple', 104)">Add to Cart</button></a>
+                    <a href="buy.html"><button class="but2">Buy</button></a>
+                </div>
+                <div class="card10 card-box col-md-6 col-xl-3 ">
+                    <!-- <p class="para1">2&percnt; Off</p> -->
+                    <a href="./blueberry.html"><img
+                            src="https://www.health.com/thmb/CtlUl-Ka_h64xiMh7c-eZWvs87c=/724x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-670247782-33772a33262945fc97802b6ddd63e5e0.jpg"
+                            alt="" class="card-image"></a>
+                    <h1 class="card-name">BlueBerry</h1>
+                    <h1 class="price-card">Rs:234</h1>
+                    <a href="#"><button class="but1" onclick="addToCart('BlueBerry', 234)">Add to Cart</button></a>
+                    <a href="buy.html"><button class="but2">Buy</button></a>
+                </div>
+                <div class="card11 card-box col-md-6 col-xl-3 ">
+                    <!-- <p class="para1">2&percnt; Off</p> -->
+                    <a href="./avacado.html"><img
+                            src="https://img.imageboss.me/fourwinds/width/425/dpr:2/shop/products/shutterstock_116205556bacon_b59ae0a5-6673-4d99-a9ba-ec6ded5ba99c.jpg?v=1729716360"
+                            alt="" class="card-image"></a>
+                    <h1 class="card-name">Avacado</h1>
+                    <h1 class="price-card">Rs:190</h1>
+                    <a href="#"><button class="but1" onclick="addToCart('Avacado', 190)">Add to Cart</button></a>
+                    <a href="buy.html"><button class="but2">Buy</button></a>
+                </div>
+                <div class="card12 card-box col-md-6 col-xl-3">
+                    <!-- <p class="para1">6&percnt; Off</p> -->
+                    <a href="./kiwi.html"><img src="https://cdn.britannica.com/45/126445-050-4C0FA9F6/Kiwi-fruit.jpg"
+                            alt="" class="card-image"></a>
+                    <h1 class="card-name">Kiwi</h1>
+                    <h1 class="price-card">Rs:112</h1>
+                    <a href="#"><button class="but1" onclick="addToCart('kiwi', 112)">Add to Cart</button></a>
+                    <a href="buy.html"><button class="but2">Buy</button></a>
+                </div>
+            </div>
+            <footer>
+                <button class="footerbutton1" onclick="location.href='./fruits.html'">view more</button>
+            </footer>
+            <br>
+        </div>
+    </div><br><br>
+    <div class="container-lg boxcard1">
+        <div class="flex-row"><br><br>
+            <h1 class="cardheader1">FRESH VEGETABLES</h1>
+            <div class="bottom-section">
+                <div class="card13 card-box col-md-6 col-xl-3">
+                    <!-- <p class="para1">7&percnt; Off</p> -->
+                    <a href="./carrot.html"><img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ19DN2VfG3UClSrs8iJD67elvWn1-qAWmpqw&s"
+                            alt="" class="card-image"></a>
+                    <h1 class="card-name">Carrot</h1>
+                    <h1 class="price-card">Rs:64</h1>
+                    <a href="#"><button class="but1" onclick="addToCart('Carrot', 64)">Add to Cart</button></a>
+                    <a href="buy.html"><button class="but2">Buy</button></a>
+                </div>
+                <div class="card14 card-box col-md-6 col-xl-3 ">
+                    <!-- <p class="para1">2&percnt; Off</p> -->
+                    <a href="./potato.html"><img src="https://m.media-amazon.com/images/I/41QKCkQ2A5L.jpg" alt=""
+                            class="card-image"></a>
+                    <h1 class="card-name">Potato</h1>
+                    <h1 class="price-card">Rs:44</h1>
+                    <a href="#"><button class="but1" onclick="addToCart('potato', 44)">Add to Cart</button></a>
+                    <a href="buy.html"><button class="but2">Buy</button></a>
+                </div>
+                <div class="card15 card-box col-md-6 col-xl-3 ">
+                    <!-- <p class="para1">2&percnt; Off</p> -->
+                    <a href="./drumstick.html"><img
+                            src="https://farmsbazaar.com/image/cache/catalog/farms%20fresh%20images%20/exotic%20veggies%20/Drumstick1-700x700.jpg"
+                            alt="" class="card-image"></a>
+                    <h1 class="card-name">DrumStick</h1>
+                    <h1 class="price-card">Rs:114</h1>
+                    <a href="#"><button class="but1" onclick="addToCart('DrumStick', 114)">Add to Cart</button></a>
+                    <a href="buy.html"><button class="but2">Buy</button></a>
+                </div>
+                <div class="card16 card-box col-md-6 col-xl-3">
+                    <!-- <p class="para1">6&percnt; Off</p> -->
+                    <a href="./radish.html"><img
+                            src="https://agribegri.com/productimage/13d03fcd73c7702b41072d97c4515678-07-01-21-17-28-00.webp"
+                            alt="" class="card-image"></a>
+                    <h1 class="card-name">Radish</h1>
+                    <h1 class="price-card">Rs:26</h1>
+                    <a href="#"><button class="but1" onclick="addToCart('Radish', 26)">Add to Cart</button></a>
+                    <a href="buy.html"><button class="but2">Buy</button></a>
+                </div>
+            </div>
+            <footer>
+                <button class="footerbutton1" onclick="location.href='./vegetables.html'">view more</button>
+            </footer>
+            <br><br>
+        </div>
+    </div><br>
+    <div class="container-lg">
+        <div class="topoffersmain">
+        <h1 class="topoffershead">SNACKS STORE</h1>
+        <div class="topoffers">
+            <div class="topofferscard">
+                <a href="./snackstore1.html"><img src="./image-5.jpg"
+                    class="topoffersimage"></a>
+            </div>
+            <div class="topofferscard">
+                <a href="./snackstore2.html"><img src="./image-6.jpg"
+                    class="topoffersimage"></a>
+            </div>
+            <div class="topofferscard">
+                <a href="./snackstore3.html"><img src="./image-7.jpg"
+                    class="topoffersimage"></a>
+            </div>
+            <div class="topofferscard">
+                <a href="./snackstore4.html"><img src="./image-8.jpg"
+                    class="topoffersimage"></a>
+            </div>
+        </div>
+        </div>
+    </div><br>
+    <div class="container-lg">
+        <div class="topoffersmain">
+        <h1 class="topoffershead">BEAUTY AND HYGIENE</h1>
+        <div class="topoffers">
+            <div class="topofferscard">
+                <a href="Beauty1.html"><img src="./image-9.jpg"
+                    class="topoffersimage"></a>
+            </div>
+            <div class="topofferscard">
+                <a href="./Beauty2.html"><img src="./image-10.jpg"
+                    class="topoffersimage"></a>
+            </div>
+            <div class="topofferscard">
+                <a href="./Beauty3.html"><img src="./image-11.jpg"
+                    class="topoffersimage"></a>
+            </div>
+            <div class="topofferscard">
+                <a href="Beauty4.html"><img src="./image-12.jpg"
+                    class="topoffersimage"></a>
+            </div>
+        </div>
+        </div>
+    </div><br>
+    <footer class="footerbox1">
+        <p class="footerpara1">All Rights are Reserved</p>
+        <p class="footerpara2">Copyrights&copy; 2025</p>
+        <center>
+            <i class="fa-brands fa-square-facebook"></i>
+            <i class="fa-brands fa-square-instagram"></i>
+            <i class="fa-brands fa-square-twitter"></i>
+            <i class="fa-brands fa-pinterest"></i>
+        </center>
+
+    </footer>
+    <!-- modal login -->
+    <div class="modal fade" id="LoginModal" tabindex="-1" aria-labelledby="LoginModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title mx-auto" id="LoginModalLabel">Login</h5>
+                </div>
+                <div class="modal-body mx-auto">
+                    <form>
+                        <br>
+                        <h6>Enter your Email</h6>
+                        <label for="Phone Number"></label>
+                        <input type="email" id="Phone Number" name="Phone Number" placeholder="abc@gmail.com" required>
+                        <br><br>
+                        <h6>Enter your password</h6>
+                        <label for="Phone Number"></label>
+                        <input type="password" id="Phone Number" name="Phone Number" placeholder="password"
+                            minlength="0" maxlength="10" required><br>
+                    </form><br>
+                    <a href="#" data-toggle="modal" data-target="#RecoverModal">Forgot password ?</a><br>
+                    <!-- <a href="#" data-toggle="modal" data-target="#SignUpModal">Sign Up ?</a> -->
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-success" onclick="Login()">Login</button>
+                </div>
+            </div>
         </div>
     </div>
-    <div class="main">
-    <div class="items">
-        <p class="off">10% off</p>
-        <img src="https://m.media-amazon.com/images/I/51C6BguuqAL.jpg" alt="" height="200px" width="200px">
-        <h4>Kaju</h4>
-        <h6>250g</h6>
-        <h5>₹299</h5>
-        <button class="add">Add</button>
+    <!--Sign Up modal-->
+    <div class="modal fade" id="SignUpModal" tabindex="-1" aria-labelledby="SignUpModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title mx-auto" id="SignUpModalLabel">Sign-Up</h5>
+                </div>
+                <div class="modal-body mx-auto">
+                    <form>
+                        <br>
+                        <h6>Full Name</h6>
+                        <label for="Phone Number"></label>
+                        <input type="text" id="Phone Number" name="Phone Number" placeholder="Enter Your Full Name">
+                        <br><br>
+                        <h6>Email</h6>
+                        <label for="Phone Number"></label>
+                        <input type="email" id="Phone Number" name="Phone Number" placeholder="abc@gmail.com">
+                        <br><br>
+                        <h6>Password</h6>
+                        <label for="Phone Number"></label>
+                        <input type="password" id="Phone Number" name="Phone Number" placeholder="Create a Password"
+                            minlength="0" maxlength="10">
+                        <br><br>
+                        <h6>Confirm Password</h6>
+                        <label for="Phone Number"></label>
+                        <input type="password" id="Phone Number" name="Phone Number" placeholder="Confirm password"
+                            minlength="0" maxlength="10"><br>
+                    </form><br>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" onclick="SignUp()">Sign Up</button>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="items">
-        <p class="off">9% off</p>
-        <img src="https://kiranamarket.com/wp-content/uploads/2023/08/saltedpista1_1_1.jpg" alt="" height="200px" width="200px">
-        <h4>Pista</h4>
-        <h6>200g</h6>
-        <h5>₹369</h5>
-        <button class="add">Add</button>
+    <!--Recover password model-->
+    <div class="modal fade" id="RecoverModal" tabindex="-1" aria-labelledby="RecoverModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title mx-auto" id="RecoverModalLabel">Recover Password</h5>
+                </div>
+                <div class="modal-body mx-auto">
+                    <form>
+                        <br>
+                        <h6>Email:</h6>
+                        <label for="Phone Number"></label>
+                        <input type="email" id="Phone Number" name="Phone Number" placeholder="Enter your Email">
+                        <br><br>
+                        <h6>Moblie Number:</h6>
+                        <label for="Phone Number"></label>
+                        <input type="text" id="Phone Number" name="Phone Number" placeholder="Enter your phone Number"
+                            minlength="0" maxlength="10">
+                        <br><br>
+                        <h6>New Password:</h6>
+                        <label for="Phone Number"></label>
+                        <input type="password" id="Phone Number" name="Phone Number" placeholder="Create a Password"
+                            minlength="0" maxlength="10">
+                        <br><br>
+                        <h6>Confirm Password:</h6>
+                        <label for="Phone Number"></label>
+                        <input type="password" id="Phone Number" name="Phone Number" placeholder="Confirm password"
+                            minlength="0" maxlength="10"><br><br>
+                    </form><br>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="reset" class="btn btn-primary" onclick="Reset()">Reset</button>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="items">
-        <p class="off">12% off</p>
-        <img src="https://dryfruithouse.com/admin/uploadImages/DRYF103_0.jpg" alt="" height="200px" width="200px">
-        <h4>Badam</h4>
-        <h6>250g</h6>
-        <h5>₹349</h5>
-        <button class="add">Add</button>
+    <!-- modal location -->
+    <div class="modal fade" id="LocationModal" tabindex="-1" aria-labelledby="LocationModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title mx-auto" id="LocationModalLabel">Location</h5>
+                </div>
+                <div class="modal-body mx-auto">
+                    <p class="pre1">
+                        Choose your address location to see product availability <br>and delivery options
+                    </p><br><br>
+                    <form>
+                        <label for="Phone Number"></label>
+                        <input type="text" id="Phone Number" name="Phone Number" placeholder="Enter your Location">
+                    </form><br><br>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Continue</button>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="items">
-        <p class="off">10% off</p>
-        <img src="https://m.media-amazon.com/images/I/51NC8VpzscL.jpg" alt="" height="200px" width="200px">
-        <h4>Anjeer</h4>
-        <h6>250g</h6>
-        <h5>₹249</h5>
-        <button class="add">Add</button>
-    </div>
-    <div class="items">
-        <p class="off">5% off</p>
-        <img src="https://5.imimg.com/data5/SELLER/Default/2022/10/JY/SK/TN/161422039/fresh-carrots-fresh-red-carrot-for-sale-1513637912-3529401.jpeg" alt="" height="200px" width="200px">
-        <h4>Carrot</h4>
-        <h6>1kg</h6>
-        <h5>₹49</h5>
-        <button class="add">Add</button>
-    </div>
-    <div class="items">
-        <p class="off">6% off</p>
-        <img src="https://media.istockphoto.com/id/831570242/photo/three-juicy-red-tomatoes-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=bBrjZsWY4eg90OpA2S6cO3psGR1TFx8f4L0HAmIQqm4=" alt="" height="200px" width="200px">
-        <h4>Tomato</h4>
-        <h6>1kg</h6>
-        <h5>₹39</h5>
-        <button class="add">Add</button>
-    </div>
-    <div class="items">
-        <p class="off">15% off</p>
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXAx-M1vSPhkncgLUpelijaI1vp5aucRfFoZMje-HKzRou17A8goZLgVGjNBWGabbuc_E&usqp=CAU" alt="" height="200px" width="200px">
-        <h4>Cabbage</h4>
-        <h6>2pc</h6>
-        <h5>₹59</h5>
-        <button class="add">Add</button>
-    </div>
-    <div class="items">
-        <p class="off">21% off</p>
-        <img src="https://media.istockphoto.com/id/1058023252/photo/pumpkin-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=VYFBd-A2d-zPNP4DWPMz-PUBIDP96cQUHqyq15-TOaA=" alt="" height="200px" width="200px">
-        <h4>Pumpkin</h4>
-        <h6>1pc</h6>
-        <h5>₹61</h5>
-        <button class="add">Add</button>
-    </div>
-    <div class="items" id="g">
-        <p class="off">19% off</p>
-        <img src="https://media.istockphoto.com/id/883703976/photo/strawberry-background-strawberries.jpg?s=612x612&w=0&k=20&c=CBHaw9-SNxpSBxToW1oFnGkiW6Eg9hYWcAZa0HZI4sI=" alt="" height="200px" width="200px">
-        <h4>Straw Berry</h4>
-        <h6>200g</h6>
-        <h5>₹95</h5>
-        <button class="add">Add</button>
-    </div>
-    <div class="items">
-        <p class="off">20% off</p>
-        <img src="https://media.istockphoto.com/id/1058762282/photo/cut-watermelon.jpg?s=612x612&w=0&k=20&c=0SdrWiE9sSirhd2ukrMRd8vWMkO18vsQh9IYqyvP1Xk=" alt="" height="200px" width="200px">
-        <h4>Water Melon</h4>
-        <h6>1pc</h6>
-        <h5>₹85</h5>
-        <button class="add">Add</button>
-    </div>
-    <div class="items">
-        <p class="off">23% off</p>
-        <img src="https://t3.ftcdn.net/jpg/06/14/68/28/360_F_614682801_dksYs38EILRYWZv53rGKUijTQ05BUnyN.jpg" alt="" height="200px" width="200px">
-        <h4>Mango</h4>
-        <h6>1kg</h6>
-        <h5>₹199</h5>
-        <button class="add">Add</button>
-    </div>
-    <div class="items">
-        <p class="off">18% off</p>
-        <img src="https://farmtodoorstep.co/wp-content/uploads/2020/09/pineapple.jpg" alt="" height="200px" width="200px">
-        <h4>Pine Apple</h4>
-        <h6>1pc</h6>
-        <h5>₹99</h5>
-        <button class="add">Add</button>
-    </div>
-    <div class="items">
-        <p class="off">20% off</p>
-        <img src="https://m.media-amazon.com/images/I/61MDlMlufkL._AC_UF894,1000_QL80_.jpg" alt="" height="200px" width="200px">
-        <h4>Toor Dal</h4>
-        <h6>1kg</h6>
-        <h5>₹203</h5>
-        <button class="add">Add</button>
-    </div>
-    <div class="items">
-        <p class="off">22% off</p>
-        <img src="https://m.media-amazon.com/images/I/71aIVWt58+L._AC_UF1000,1000_QL80_.jpg" alt="" height="200px" width="200px">
-        <h4>Freedom Oil</h4>
-        <h6>1L</h6>
-        <h5>₹174</h5>
-        <button class="add">Add</button>
-    </div>
-    <div class="items">
-        <p class="off">25% off</p>
-        <img src="https://m.media-amazon.com/images/I/61GtJDWuB3L._AC_UF1000,1000_QL80_.jpg" alt="" height="200px" width="200px">
-        <h4>Vim Liquid</h4>
-        <h6>750ml</h6>
-        <h5>₹179</h5>
-        <button class="add">Add</button>
-    </div>
-    <div class="items">
-        <p class="off">20% off</p>
-        <img src="https://m.media-amazon.com/images/I/71EusVnENGL._AC_UF1000,1000_QL80_.jpg" alt="" height="200px" width="200px">
-        <h4>Upma</h4>
-        <h6>500g</h6>
-        <h5>₹40</h5>
-        <button class="add">Add</button> 
-    </div>
-    </div>
+    <script src="script.js"></script>
+    <script>
+        // function contact1() {
+        //     alert("To reach our customer service team please email us at: customerservice@bigbasket.com To submit a customer service request click here. [All calls to our customer support number 1860-123-1000 will be recorded for internal training and quality purposes.]")
+        // }
+        function Login() {
+            alert("This page is successfully Login...")
+        }
+        function SignUp() {
+            alert("This page is Successfully Sign in...")
+        }
+        function Reset() {
+            alert("This page is successfully reset the password...")
+        }
+    </script>
+
 </body>
+
 </html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon"
+        href="https://cdn.vectorstock.com/i/1000v/14/51/smart-mart-icon-s-typography-logo-vector-45351451.jpg">
+    <title>Cashew nuts</title>
+<style>
+    .image {
+        margin-top: 10px;
+        margin-left: 10px;
+        float: left;
+        max-width: 100%;
+        height: 500px;
+        width: 500px;
+    }
+
+    .content {
+        margin-left:35%;
+    }
+
+    .quantity {
+        display: flex;
+        height: 50px;
+        max-width: 100%;
+        border: 1px solid rgba(172, 255, 47, 0.742);
+        justify-content: space-between;
+        margin-right: 10%;
+        align-items: center;
+        border-radius: 10px;
+    }
+    .quantity:hover{
+        border-color: yellowgreen;
+    }
+    .btn{
+        display: flex;
+        gap:10px;
+    }
+    .add ,.save{
+        padding: 10px 25px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .add{
+        background-color: red;
+        color: white;
+    }
+    .save{
+        background-color: rgba(153, 205, 50, 0.255);
+        color: yellowgreen;
+    }
+    input{
+        accent-color: greenyellow;
+        cursor: pointer;
+    }
+    del{
+        color: gray;
+    }
+    .offer{
+        color:yellowgreen;
+        background-color: rgba(153, 205, 50, 0.242);
+        border-radius: 5px;
+        margin-right: 5px;
+    }
+    @media screen and (max-width:576px) {
+        .image{
+            margin-left: 0px;
+        }
+        .content{
+            margin-left: 0px;
+        }
+    }
+    @media screen and (min-width:577px) and (max-width:768px) {
+        .image{
+            margin-left: 100px;
+            margin-right: 100px;
+        }
+        .content{
+            margin-left: 0px;
+        }
+    }
+    @media screen and (min-width:769px) and (max-width:992px) {
+        .image{
+            margin-left: 10%;
+            margin-right: 100%;
+        }
+        .content{
+            margin-left: 0px;
+        }
+    }
+    @media screen and (min-width:993px) and (max-width:1200px) {
+        .image{
+            margin-left: 10%;
+            margin-right: 100%;
+        }
+        .content{
+            margin-left: 0px;
+        }
+    }
+</style>
+</head>
+<body>
+    <img class="image" src="https://achalorg.com/resource/uploads/product/xwholes-xxxl-front_1634618303.jpg.pagespeed.ic.Cu_fjHPkOd.jpg" alt="Cashew nuts">
+    <div class="content">
+        <h3>Cashew nuts</h3>
+        <div class="btn">
+            <button class="add" onclick="addToCart('Cashew Nuts', 520)">Add to cart</button>
+            <button class="save" onclick="location.href='buy.html'">Buy</button>
+        </div><br><br>
+        <section>
+            <div class="quantity">
+                <div>
+               <input type="radio" name="amount">500g</div><span>₹520<br><del>₹536</del>  <span class="offer"> 18&percnt; OFF</span></span>
+            </div><br><br>
+            <div class="quantity">
+                <div>
+                    <input type="radio" name="amount">200g</div><span>₹234<br><del>₹245</del><span class="offer"> 5&percnt; OFF</span></span>
+            </div><br><br> 
+            <div class="quantity">
+                <div>
+                    <input type="radio" name="amount">100g</div><span>₹120<br><del>₹131</del><span class="offer"> 11&percnt; OFF</span></span>
+            </div><br><br>
+        </section>
+        <h5>About the Product</h5>
+        Discover the rich, buttery flavour of our premium cashews. Sourced from the finest orchards, these cashews are roasted to perfection, offering a delightful crunch in every bite. Packed with essential nutrients and healthy fats, they make an ideal snack for any time of the day. Perfect for adding to recipes, salads, or enjoying on their own, our cashews are a versatile and nutritious choice for your pantry. They can be eaten raw or roasted and make for an easy portable snack. Whole or ground cashews can also be incorporated into a variety of dishes, ranging from scrambled tofu and stir-fries to soups, salads, and stews
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

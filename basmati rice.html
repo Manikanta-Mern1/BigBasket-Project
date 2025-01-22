@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon"
+        href="https://cdn.vectorstock.com/i/1000v/14/51/smart-mart-icon-s-typography-logo-vector-45351451.jpg">
+    <title>Basmati Rice</title>
+<style>
+    .image {
+        margin-top: 10px;
+        margin-left: 10px;
+        float: left;
+        max-width: 100%;
+        height: 500px;
+        width: 500px;
+    }
+
+    .content {
+        margin-left:35%;
+    }
+
+    .quantity {
+        display: flex;
+        height: 50px;
+        max-width: 100%;
+        border: 1px solid rgba(172, 255, 47, 0.742);
+        justify-content: space-between;
+        margin-right: 10%;
+        align-items: center;
+        border-radius: 10px;
+    }
+    .quantity:hover{
+        border-color: yellowgreen;
+    }
+    .btn{
+        display: flex;
+        gap:10px;
+    }
+    .add ,.save{
+        padding: 10px 25px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .add{
+        background-color: red;
+        color: white;
+    }
+    .save{
+        background-color: rgba(153, 205, 50, 0.255);
+        color: yellowgreen;
+    }
+    input{
+        accent-color: greenyellow;
+        cursor: pointer;
+    }
+    del{
+        color: gray;
+    }
+    .offer{
+        color:yellowgreen;
+        background-color: rgba(153, 205, 50, 0.242);
+        border-radius: 5px;
+        margin-right: 5px;
+    }
+    @media screen and (max-width:576px) {
+        .image{
+            margin-left: 0px;
+        }
+        .content{
+            margin-left: 0px;
+        }
+    }
+    @media screen and (min-width:577px) and (max-width:768px) {
+        .image{
+            margin-left: 100px;
+            margin-right: 100px;
+        }
+        .content{
+            margin-left: 0px;
+        }
+    }
+    @media screen and (min-width:769px) and (max-width:992px) {
+        .image{
+            margin-left: 10%;
+            margin-right: 100%;
+        }
+        .content{
+            margin-left: 0px;
+        }
+    }
+    @media screen and (min-width:993px) and (max-width:1200px) {
+        .image{
+            margin-left: 10%;
+            margin-right: 100%;
+        }
+        .content{
+            margin-left: 0px;
+        }
+    }
+</style>
+</head>
+<body>
+    <img class="image" src="https://bazaar5.com/image/cache/catalog/pro/product/apiData/b007gzm230-india-gate-basmati-rice-bag-super-5kg-0-2560x2560.jpg" alt="Basmati Rice">
+    <div class="content">
+        <h3>Basmati Rice</h3>
+        <div class="btn">
+            <button class="add" onclick="addToCart('Basmati Rice', 153)">Add to cart</button>
+            <button class="save" onclick="location.href='buy.html'">Buy</button>
+        </div><br><br>
+        <section>
+            <div class="quantity">
+                <div>
+               <input type="radio" name="amount">1 kg</div><span>₹153<br><del>₹200</del>  <span class="offer"> 23&percnt; OFF</span></span>
+            </div><br><br>
+            <div class="quantity">
+                <div>
+                    <input type="radio" name="amount">5 kg</div><span>₹626<br><del>₹945</del><span class="offer"> 35&percnt; OFF</span></span>
+            </div><br><br> 
+            <div class="quantity">
+                <div>
+                    <input type="radio" name="amount">2 kg</div><span>₹280<br><del>₹390</del><span class="offer"> 20&percnt; OFF</span></span>
+            </div><br><br>
+        </section>
+        <h5>About the Product</h5>
+        Enhance your dishes with superior quality and aromatic essence, ideal for an array of exotic dishes, adding a touch of sophistication and flavour to every meal. Whether it's the vibrant flavours of fried rice, the creamy richness of risotto, the comforting essence of Rajma rice, or any other gourmet creation, this Basmati rice lends itself seamlessly to diverse culinary creations
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
